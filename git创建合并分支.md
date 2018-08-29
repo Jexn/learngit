@@ -1,29 +1,29 @@
-首先，创建dev分支，然后切换到dev分支：<br>
-<code>git checkout -b dev</code><br>
-git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：<br>
-<code>$ git branch dev</code><br>
-<code>$ git checkout dev</code><br>
-<code>switch to branch 'dev'<code><br>
+首先，创建dev分支，然后切换到dev分支：
+git checkout -b dev
+git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：
+$ git branch dev
+$ git checkout dev
+switch to branch 'dev'
 
-然后,用git branch命令查看当前分支:<br>
-<code>$ git branch</code><br>
-* dev<br>
-  master<br>
+然后,用git branch命令查看当前分支:
+$ git branch
+* dev
+  master
 
-git branch命令会列出所有的分支，*标注的为当前分支<br>
+git branch命令会列出所有的分支，*标注的为当前分支
 
-我们就可以在dev分支上正常提交，比如对readme.txt做个修改，加上一行：<br>
+我们就可以在dev分支上正常提交，比如对readme.txt做个修改，加上一行：
 
-<code>Creating a new branch is quick.</code>
+Creating a new branch is quick.
 然后提交：
-<code>$ git add readme.txt</code><br> 
-<code>$ git commit -m "branch test"</code><br>
-<code>[dev b17d20e] branch test</code>
-<code> 1 file changed, 1 insertion(+)<code>
-现在，dev分支的工作完成，我们就可以切换回master分支：<br>
-<code>
+$ git add readme.txt 
+$ git commit -m "branch test"
+[dev b17d20e] branch test
+ 1 file changed, 1 insertion(+)
+现在，dev分支的工作完成，我们就可以切换回master分支：
+
 $ git checkout master
-Switched to branch 'master'</code>
+Switched to branch 'master'
 切换回master分支后，再查看一个readme.txt文件，刚才添加的内容不见了！因为那个提交是在dev分支上，而master分支此刻的提交点并没有变：
 
 现在，我们把dev分支的工作成果合并到master分支上：
