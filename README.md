@@ -1,7 +1,7 @@
-#git学习过程
+# git学习过程
 
-#创建git远程仓库，链接远程仓库过程
-
+## 创建git远程仓库，链接远程仓库过程
+---
 * 第一步，创建本地密钥，看看用户主目录下有没有.ssh目录，而且该目录下有没有id_rsa和id_rsa.pub文件。如果没有，则输入
 <code>ssh-keygen -t rsa -C 'youremail@example.com'</code>
 创建自己的私钥和公钥。id_rsa是私钥，id_rsa.pub是公钥。
@@ -11,7 +11,8 @@
 * 第五步，把本地master推送到github,注意：未成master的目录无法进行推送，可以用<code>git init</code>转换成master。<br><code>git push -u origin master</code>推送本地项目到远程仓库
 * 从现在起，可以通过<code>git push origin master</code>提交修改了
 
-#SSH警告
+## SSH警告
+---
 * 当你第一次使用git的clone或者push命令连接到GitHub时，会得到一个警告：
 <code>The authenticity of host 'github.com (xx.xx.xx.xx)' can't be      stablished.
     RSA key fingerprint is xx.xx.xx.xx.xx.
