@@ -1,0 +1,3 @@
+这是一个其他用户用git clone后
+再用git check -b dev origin/dev命令
+在dev分支上创建的文件
