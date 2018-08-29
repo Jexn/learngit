@@ -15,6 +15,6 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 如果遇到此错误，说明远程仓库有什么修改你本地没有，需要你先合并远程仓库，然后再做修改：<br>
 <code>
 git pull origin master
-</code>
-然后就可以正常使用提交命令：
+</code><br>
+然后就可以正常使用提交命令：<br>
 <code>git push origin master</code>
