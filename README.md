@@ -14,7 +14,7 @@
 ## SSH警告
 ---
 * 当你第一次使用git的clone或者push命令连接到GitHub时，会得到一个警告：
-<code>The authenticity of host 'github.com (xx.xx.xx.xx)' can't be      stablished.
+<code>The authenticity of host 'github.com (xx.xx.xx.xx)' can't be stablished.
     RSA key fingerprint is xx.xx.xx.xx.xx.
     Are you sure you want to continue connecting (yes/no)?</code><br>
 这是因为Git使用SSH连接，而SSH连接在第一次验证GitHub服务器的Key时，需要你确认GitHub的Key的指纹信息是否真的来自GitHub的服务器，输入yes回车即可。<br> Git会输出一个警告，告诉你已经把GitHub的Key添加到本机的一个信任列表里了：<br><code>Warning: Permanently added 'github.com' (RSA) to the list of known hosts.</code><br>这个警告只会出现一次，后面的操作就不会有任何警告了。<br>如果你实在担心有人冒充GitHub服务器，输入yes前可以对照GitHub的RSA Key的指纹信息是否与SSH连接给出的一致。
