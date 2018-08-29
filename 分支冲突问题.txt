@@ -1,2 +1,2 @@
 分支主分支下的文件。
-Creating a new branch is quick.
+Creating a new branch is quick And simple.
